@@ -7,7 +7,7 @@ function performOperation() {
     // Perform the operation
         let result = multiply(num1, num2);
         let result2 = addition(num1, num2);
-        let result3 = dio(num1, num2);
+        let result3 = division(num1, num2);
         // Display the result
         displayResult(result);
         displayResult(result2);
