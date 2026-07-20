@@ -9,9 +9,9 @@ function performOperation() {
         let result2 = addition(num1, num2);
         let result3 = division(num1, num2);
         // Display the result
-        displayResult(result);
-        displayResult(result2);
-        displayResult(result3);
+        displayResult("result",result);
+        displayResult("result2",result2);
+        displayResult("result3",result3);
     } else {
         displayResult('Please enter valid numbers');
     }
@@ -41,8 +41,8 @@ function division(a, b) {
     return a / b;
 }
 
-function displayResult(result) {
+function displayResult(name,result) {
     // Display the result in the paragraph element
-    const resultElement = document.getElementById('result');
+    const resultElement = document.getElementById(name);
     resultElement.textContent = `The result is: ${result}`;
 }
