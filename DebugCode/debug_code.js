@@ -43,6 +43,6 @@ function division(a, b) {
 
 function displayResult(result) {
     // Display the result in the paragraph element
-    const resultElement = document.getElementById(`${result}`);
+    const resultElement = document.getElementById('result');
     resultElement.textContent = `The result is: ${result}`;
 }
